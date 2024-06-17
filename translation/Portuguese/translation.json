@@ -1,0 +1,13 @@
+{
+  "login": "Entrar",
+  "contact": "Contato",
+  "menu": "Menu",
+
+  "basket": "Carrinho",
+  "checkout": "Finalizar Compra",
+  "products": "Produtos",
+  "burgers": "Hamburgueres",
+  "drinks": "Bebidas",
+  "addToOrder": "Adicionar ao Pedido",
+  "viewAllergyInformation": "Ver Informações de Alergia"
+}

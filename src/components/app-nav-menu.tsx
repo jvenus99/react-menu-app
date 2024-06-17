@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -9,13 +10,14 @@ import {
 import { Link } from "react-router-dom";
 
 export const AppNavMenu = () => {
+  const { t } = useTranslation();
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
           <Link to="">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              menu
+              {t("menu")}
             </NavigationMenuLink>
           </Link>
           <div className="bg-white w-full h-0.5" />
@@ -23,14 +25,14 @@ export const AppNavMenu = () => {
         <NavigationMenuItem>
           <Link to="">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              entrar
+              {t("login")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
           <Link to="">
             <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              contato
+              {t("contact")}
             </NavigationMenuLink>
           </Link>
         </NavigationMenuItem>

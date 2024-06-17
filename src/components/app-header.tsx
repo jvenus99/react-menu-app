@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   Sheet,
   SheetContent,
@@ -9,6 +10,7 @@ import { AppNavMenu } from "@/components/app-nav-menu";
 import { Outlet } from "react-router-dom";
 
 export const AppHeader = () => {
+  const { t } = useTranslation();
   return (
     <>
       <header className="bg-primary flex flex-col">
@@ -17,7 +19,7 @@ export const AppHeader = () => {
             <AppNavMenu />
           </div>
           <span className="md:hidden text-primary-foreground w-full text-center">
-            Menu
+            {t("menu")}
           </span>
           <Sheet>
             <SheetTrigger asChild className="md:hidden">
@@ -29,10 +31,10 @@ export const AppHeader = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-[200px] sm:w-[340px]">
               <SheetHeader className="content-center">
-                <SheetTitle>Menu</SheetTitle>
+                <SheetTitle>{t("menu")}</SheetTitle>
               </SheetHeader>
-              <div className="pl-5 pt-5">Entrar</div>
-              <div className="pl-5 pt-5">Contato</div>
+              <div className="pl-5 pt-5">{t("login")}</div>
+              <div className="pl-5 pt-5">{t("contact")}</div>
             </SheetContent>
           </Sheet>
         </div>

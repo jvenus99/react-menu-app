@@ -1,0 +1,13 @@
+{
+  "login": "Login",
+  "contact": "Contact",
+  "menu": "Menu",
+
+  "basket": "Basket",
+  "checkout": "Checkout",
+  "products": "Products",
+  "burgers": "Burgers",
+  "drinks": "Drinks",
+  "addToOrder": "Add to Order",
+  "viewAllergyInformation": "View Allergy Information"
+}
