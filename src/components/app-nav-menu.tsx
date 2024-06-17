@@ -2,7 +2,6 @@ import { useTranslation } from "react-i18next";
 import {
   NavigationMenu,
   NavigationMenuItem,
-  NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from "./ui/navigation-menu";
@@ -15,25 +14,19 @@ export const AppNavMenu = () => {
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <Link to="">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {t("menu")}
-            </NavigationMenuLink>
+          <Link to="" className={navigationMenuTriggerStyle()}>
+            {t("menu")}
           </Link>
           <div className="bg-white w-full h-0.5" />
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {t("login")}
-            </NavigationMenuLink>
+          <Link to="" className={navigationMenuTriggerStyle()}>
+            {t("login")}
           </Link>
         </NavigationMenuItem>
         <NavigationMenuItem>
-          <Link to="">
-            <NavigationMenuLink className={navigationMenuTriggerStyle()}>
-              {t("contact")}
-            </NavigationMenuLink>
+          <Link to="" className={navigationMenuTriggerStyle()}>
+            {t("contact")}
           </Link>
         </NavigationMenuItem>
       </NavigationMenuList>

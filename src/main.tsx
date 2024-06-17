@@ -1,9 +1,12 @@
+import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "@/App.tsx";
+import { Provider } from "react-redux";
+import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { store } from "@/shared/data/store/store";
+
+import MenuPage from "@/menu";
 import "./index.css";
 import "./i18n";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import React from "react";
 import { AppHeader } from "./components/app-header";
 
 const router = createBrowserRouter([
@@ -12,7 +15,7 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <App />,
+        element: <MenuPage />,
       },
     ],
   },
@@ -20,6 +23,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
