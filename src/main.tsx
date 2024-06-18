@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { store } from "@/shared/data/store/store";
 
-import MenuPage from "@/menu";
+import MenuPage from "@/menu/presentantion";
 import "./index.css";
 import "./i18n";
 import { AppHeader } from "./components/app-header";
